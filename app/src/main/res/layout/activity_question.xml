@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/light_blue"
+    tools:context=".QuestionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/question_indicate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text ="Question 6/10"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/timer_icon"
+            app:tint="@color/dark_blue"
+            android:layout_marginEnd="6dp"
+           android:layout_toStartOf="@id/timer_indicate"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/timer_indicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text ="0.46"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_blue"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress_indicate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        tools:progress="60" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="8dp"
+        android:backgroundTint="@color/light_blue"
+        android:elevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/question_card"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                tools:text="What is Android OS?"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/round_corner"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/blue"
+                android:padding="8dp"
+                android:layout_marginVertical="8dp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/answer_btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/grey"
+                tools:text="Answer A"
+                android:textColor="@color/black"
+                android:paddingVertical="12dp"
+                android:textSize="20sp"
+                android:gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/answer_btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/grey"
+                tools:text="Answer B"
+                android:textColor="@color/black"
+                android:paddingVertical="12dp"
+                android:textSize="20sp"
+                android:gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/answer_btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/grey"
+                tools:text="Answer C"
+                android:textColor="@color/black"
+                android:paddingVertical="12dp"
+                android:textSize="20sp"
+                android:gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/answer_btn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/grey"
+                tools:text="Answer D"
+                android:textColor="@color/black"
+                android:paddingVertical="12dp"
+                android:textSize="20sp"
+                android:gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/blue"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:paddingVertical="12dp"
+                android:layout_gravity="end"
+                android:textSize="20sp"
+                android:paddingHorizontal="40dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

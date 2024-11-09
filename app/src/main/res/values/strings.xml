@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">QuizGame</string>
+    <string name="quizify_app">Quizify App</string>
+    <string name="app_description">Challenge Your Mind, Quizify Your World</string>
+    <string name="image">image</string>
+    <string name="all_items">All Items</string>
+    <string name="_1_min">1 min</string>
+    <string name="quiz_time">Quiz Time</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="time">time</string>
+    <string name="back">Back</string>
+</resources>
